@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/240090328_380538590186904_8302400969037631414_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=e3f864&_nc_ohc=BhqNeuOkfMAAX8jBgoW&_nc_ht=scontent.fhan14-1.fna&oh=00_AT9reNIFv8CiusWw_YBrimQVrSBHmjW357DrKFii8wo1eQ&oe=634027AA");
+  min-height: 90%;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 1;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small" style="background-color: #222; color:aliceblue;">
+  <div class="w3-bar w3-xlarge " id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container " id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 7am to 12pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">Andersen<br>Nordic Bakery</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:70px"><b>Andersen<br>Nordic Bakery</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+  </div>
+</header>
+
+
+<div class="container">
+  <div class="mySlides">
+    <img src="https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/306096895_477017961107185_9116696528724637020_n.jpg?stp=cp6_dst-jpg&_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=lNA_wV_ZxPQAX81zEVF&_nc_ht=scontent.fhan19-1.fna&oh=00_AT-kflO590im9GvFDB8BpIvuhcHhNk_C6Pvlbs61w8zFnA&oe=6340381C" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/289997240_567653294808765_3074201662511335923_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=j4gfj88htosAX90Q7yP&_nc_ht=scontent.fhan19-1.fna&oh=00_AT8BNGMHJNLozsxDEzkx0FQuCY-YC3yHJ2lXkxUgBmiIVA&oe=6341CA77" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/294767944_433244925484489_7314722554643745530_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=sRXAz7gBpnUAX-2VX2-&_nc_ht=scontent.fhan19-1.fna&oh=00_AT9tmfZIQgj_V-yDGLCuYsjL_jf4YPXptf5_phPOBe8rfA&oe=6341ED0C" style="width:90%">
+  </div>
+    
+  <div class="mySlides">
+    <img src="https://scontent-hkt1-2.xx.fbcdn.net/v/t39.30808-6/251946852_421530546087708_3368136410492420047_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=UJATal6Qs04AX_AEAfa&_nc_ht=scontent-hkt1-2.xx&oh=00_AT_zLIypIFmlq3Z2Grc9P6i0nN7tTwYlnpE2cZwLo6WRfA&oe=633FF8E6" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="https://scontent-hkt1-1.xx.fbcdn.net/v/t39.30808-6/244778059_405494364357993_2091619241444352633_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=DtMQJuMw5lIAX_8b5rS&_nc_ht=scontent-hkt1-1.xx&oh=00_AT_90Dp0EaSHk5s8RfvuFJa1krD7LWEAIAnWUhEPvRQ-sQ&oe=63406B98" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <img src="https://scontent-hkt1-2.xx.fbcdn.net/v/t39.30808-6/306667015_480869467388701_3443545957906099741_n.jpg?stp=cp6_dst-jpg&_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=SG3jlMwnLSMAX9L6yX6&_nc_oc=AQlL8Ko0Hc-LbtLCH14LAPL2icwPPe27MZw0e0x5CZrgz65F6nUy27L9Kh_XYJV-X_E&_nc_ht=scontent-hkt1-2.xx&oh=00_AT9i_ubnIGfEvjTkbLNaY6rCMBc9S8fsKgTay86ymCu05g&oe=6340102A" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/306096895_477017961107185_9116696528724637020_n.jpg?stp=cp6_dst-jpg&_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=lNA_wV_ZxPQAX81zEVF&_nc_ht=scontent.fhan19-1.fna&oh=00_AT-kflO590im9GvFDB8BpIvuhcHhNk_C6Pvlbs61w8zFnA&oe=6340381C" style="width:100%" onclick="currentSlide(1)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/289997240_567653294808765_3074201662511335923_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=j4gfj88htosAX90Q7yP&_nc_ht=scontent.fhan19-1.fna&oh=00_AT8BNGMHJNLozsxDEzkx0FQuCY-YC3yHJ2lXkxUgBmiIVA&oe=6341CA77" style="width:100%" onclick="currentSlide(2)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/294767944_433244925484489_7314722554643745530_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=sRXAz7gBpnUAX-2VX2-&_nc_ht=scontent.fhan19-1.fna&oh=00_AT9tmfZIQgj_V-yDGLCuYsjL_jf4YPXptf5_phPOBe8rfA&oe=6341ED0C" style="width:100%" onclick="currentSlide(3)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://scontent-hkt1-2.xx.fbcdn.net/v/t39.30808-6/251946852_421530546087708_3368136410492420047_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=UJATal6Qs04AX_AEAfa&_nc_ht=scontent-hkt1-2.xx&oh=00_AT_zLIypIFmlq3Z2Grc9P6i0nN7tTwYlnpE2cZwLo6WRfA&oe=633FF8E6" style="width:100%" onclick="currentSlide(4)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://scontent-hkt1-1.xx.fbcdn.net/v/t39.30808-6/244778059_405494364357993_2091619241444352633_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=DtMQJuMw5lIAX_8b5rS&_nc_ht=scontent-hkt1-1.xx&oh=00_AT_90Dp0EaSHk5s8RfvuFJa1krD7LWEAIAnWUhEPvRQ-sQ&oe=63406B98" style="width:100%" onclick="currentSlide(5)" >
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="https://scontent-hkt1-2.xx.fbcdn.net/v/t39.30808-6/306667015_480869467388701_3443545957906099741_n.jpg?stp=cp6_dst-jpg&_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=SG3jlMwnLSMAX9L6yX6&_nc_oc=AQlL8Ko0Hc-LbtLCH14LAPL2icwPPe27MZw0e0x5CZrgz65F6nUy27L9Kh_XYJV-X_E&_nc_ht=scontent-hkt1-2.xx&oh=00_AT9i_ubnIGfEvjTkbLNaY6rCMBc9S8fsKgTay86ymCu05g&oe=6340102A" style="width:65%" onclick="currentSlide(6)" >
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'SOURDOUGH BREADS');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">SOURDOUGH BREADS</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'SOURDOUGH BAGUETTE');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">SOURDOUGH BAGUETTE</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'PRE-ODER BREADS');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">PRE-ODER BREADS</div>
+      </a>
+    </div>
+
+    <div id="SOURDOUGH BREADS" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Danish dark rye</b> <span class="w3-right w3-tag w3-dark-grey w3-round">95,000đ</span></h1>
+      <p class="w3-text-grey">Bánh hạt Đan Mạch</p>
+      <hr>
+   
+      <h1><b>Multigrain rye boule</b> <span class="w3-right w3-tag w3-dark-grey w3-round">155,000đ</span></h1>
+      <p class="w3-text-grey">Bánh tròn đen, hạt tổng hợp</p>
+      <hr>
+      
+      <h1><b>Rye boule </b> <span class="w3-right w3-tag w3-dark-grey w3-round">85.000đ</span></h1>
+      <p class="w3-text-grey">Bánh tròn đen</p>
+      <hr>
+
+      <h1><b>Multigrain white boule</b> <span class="w3-right w3-tag w3-dark-grey w3-round">130,000đ</span></h1>
+      <p class="w3-text-grey">Bánh tròn trắng, hạt tổng hợp</p>
+      <hr>
+
+      <h1><b>White boule</b> <span class="w3-right w3-tag w3-dark-grey w3-round">75,000đ</span></h1>
+      <p class="w3-text-grey">Bánh tròn trắng</p>
+      <hr>
+    </div>
+
+    <div id="SOURDOUGH BAGUETTE" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Whole wheat baguette</b> <span class="w3-right w3-tag w3-dark-grey w3-round">35,000đ</span></h1>
+      <p class="w3-text-grey">Bánh dài nguyên cám</p>
+      <hr>
+   
+      <h1><b>Whole wheat bread with olive, walnuts and flax seeds</b> <span class="w3-right w3-tag w3-dark-grey w3-round">35,000đ</span></h1>
+      <p class="w3-text-grey">Bánh dài nguyên cám ôliu, hạt óc chó và hạt chia</p>
+      <hr>
+      </div>
+      
+    <div id="PRE-ODER BREADS" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Pumpkin sourdough bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">145,000đ</span></h1>
+      <p class="w3-text-grey">Bánh bí ngô</p>
+      <hr>
+   
+      <h1><b>Spent grain sourdough bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">85,000đ</span></h1>
+      <p class="w3-text-grey">Bánh mỳ lúa mạch</p>
+      <hr>
+      
+      <h1><b>Paleo bread (500g)</b> <span class="w3-right w3-tag w3-dark-grey w3-round">260,000đ</span></h1>
+      <p class="w3-text-grey">Bánh nguyên hạt</p>
+      <hr>
+      
+      <h1><b>Panettone (Tradition/Chocolate)</b> <span class="w3-right w3-tag w3-dark-grey w3-round">239,000đ</span></h1>
+      <p class="w3-text-grey">Bánh mứt trái cây/ sô-cô-la </p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red  w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>Fresh baked bread all day long with good selection of stable topping and specialties when we find un</p>
+    <p>We take pride in our products.</p>
+    <img src="https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/242430483_392629705644459_396780232530771723_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=uW_jkO_VO98AX_mCPvU&_nc_ht=scontent.fhan19-1.fna&oh=00_AT-WjxeufGB2IJllue2KOfftH3qU29i0R6jxm8Dm6L3WIg&oe=63416CA1" style="width:100%;" class="w3-square" >
+    
+    <img src="https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/280725492_541260770781351_2768083340258513414_n.jpg?stp=dst-jpg_p843x403&_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=CRs3v7o2Y2wAX9vWTja&_nc_ht=scontent.fhan19-1.fna&oh=00_AT8pY4eFIjlk4gI25i5Vh-WJWH-mmu9VVMNnBGPRF33fgg&oe=63407D4F" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Address</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>84 Lang Ha, Dong Da, Ha Noi  (0986.428.965)</p>
+        <p></p>
+        <p>40 Xuan Dieu, Tay Ho (0987.407.928)</p>
+        <p></p>
+        <p>No 5F, Lane 12/2 Dang Thai Mai, Tay Ho (0986.356.485)</p>
+      </div>
+      
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/241194187_441763064064456_1091580216904976165_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=jar68kyAp0AAX9hMGz3&_nc_ht=scontent.fhan19-1.fna&oh=00_AT-KW13fJ5H4IfSfXEt_uCvA2w9d6Yc2M5Uh_cw-hVBKyw&oe=634224FC" class="w3-image" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Find us at some addresses in some places or call us at the store number</p>
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p class="w3-xxlarge"><strong>Reserve</strong> Order today's special request or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Phone" required name="Phone"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
